@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.wrapper h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.wrapper p {
+  text-align: center;
+  margin-top: 7px;
+  font-weight: bold;
+}
+
+.wrapper .main {
+  display: flex;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.wrapper .form-container {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  background-color: antiquewhite;
+  margin-top: 0px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.wrapper .form-container .form-control {
+  width: 50%;
+}
+
+.wrapper .form-container .btn {
+  width: 50%;
+  background-color: lightseagreen;
+}
+
+/* view container Start*/
+
+.viewcontainer {
+  left: 100%;
+  display: flex;
+  /* align-items: left;*/
+  height: 75vh;
+  width: 90%;
+  justify-content: center;
+}
+
+.accordion {
+  width: 500px;
+  height: auto;
+}
+
+.item {
+  background: rgb(179, 238, 226);
+  margin-bottom: 2px;
+  padding: 5px 3px;
+}
+
+.title {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bodycontent {
+  color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.1s cubic-bezier(0, 1, 0, 1);
+}
+
+.bodycontentshow {
+  height: auto;
+  max-height: 500px;
+  transition: all 0.1s cubic-bezier(1, 0, 1, 0);
+}
+
+.viewcontainer-delbtn {
+  color: red;
+  cursor: pointer;
+}
+
+/* view container End*/
